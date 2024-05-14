@@ -1,0 +1,17 @@
+{
+  "_id": "ObjectId",
+  "Name": "string",
+  "Address": "string",
+  "City": "string",
+  "Post_code": "string",
+  "Location": {
+    "Coordinates": ["float", "float"]
+  },
+  "Realtime_inventory": [
+    {
+      "Product_id": "ObjectId",
+      "Timestamp": "string",
+      "Quantity": "int"
+    }
+  ]
+}

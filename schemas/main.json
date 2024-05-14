@@ -1,0 +1,213 @@
+customers:[
+
+  {
+    "_id": "ObjectId",
+    "Name": "string",
+    "Gender": "string",
+    "Age": "int",
+    "Phone_number": "string",
+    "Addresses": [
+      {
+        "_id": "ObjectId",
+        "House": "string",
+        "Street": "string",
+        "City": "string",
+        "Post_code": "string",
+        "Location": {
+          "Coordinates": ["float", "float"]
+        }
+      }
+    ],
+    "Current_orders": [
+      {
+        "_id": "ObjectId",
+        "Date": "string",
+        "Order_status": "string",
+        "Order_details": {
+          "Total_cost": "float",
+          "partner_id": "ObjectId",
+          "Shipping_id": "ObjectId",
+          "Supplier_id": "ObjectId"
+        },
+        "Recommended_products": [
+          {
+            "Product_id": "ObjectId",
+            "Avg_rating": "float"
+          }
+        ]
+      }
+    ]
+  }
+  
+]
+
+dailyinventoryRecord:[
+  {
+    "_id": "ObjectId",
+    "Supplier_id": "ObjectId",
+    "Product_id": "ObjectId",
+    "Start_date": "string",
+    "End_date": "string",
+    "Supplier_location": {
+      "Coordinates": ["float", "float"]
+    },
+    "Inventory_data": [
+      {
+        "Datetime": "string",
+        "Inventory_quantity": "int"
+      }
+    ]
+  }
+  
+]
+
+partnerHistory:[
+  {
+    "_id": "ObjectId",
+    "Partner_id": "ObjectId",
+    "Start_date": "string",
+    "End_date": "string",
+    "Orders": [
+      {
+        "Order_id": "ObjectId",
+        "Timestamp": "string",
+        "Order_details": {
+          "Product_id": "ObjectId",
+          "Quantity": "int"
+        }
+      }
+    ]
+  }
+  
+]
+
+Partners:[
+  {
+    "_id": "ObjectId",
+    "Name": "string",
+    "Age": "int",
+    "Gender": "string",
+    "Phone": "string",
+    "Email": "string",
+    "Bank_account": {
+      "Account_name": "string",
+      "Account_number": "string",
+      "Sort_code": "string"
+    },
+    "Availability": {
+      "Is_active": "int",
+      "On_delivery": "int",
+      "Location": {
+        "Type": "string",
+        "Coordinates": ["float", "float"]
+      }
+    },
+    "Deliveries_made": "int",
+    "Avg_per_week": "float",
+    "Best_week": "float",
+    "Number_of_week": "int"
+  }
+  
+]
+
+pastOrders:[
+  {
+    "_id": "ObjectId",
+    "Order_date": "string",
+    "Customer_id": "ObjectId",
+    "Order_details": [
+      {
+        "Product_id": "ObjectId",
+        "Quantity": "int",
+        "Cost": "float"
+      }
+    ],
+    "Total_cost": "float",
+    "Partner_id": "ObjectId",
+    "Shipping_id": "ObjectId",
+    "Supplier_id": "ObjectId",
+    "Order_status": "string"
+  }
+  
+]
+
+products:[
+  {
+    "_id": "ObjectId",
+    "Product_name": "string",
+    "Short_desc": "string",
+    "Dimensions": {
+      "Length": "float",
+      "Width": "float",
+      "Height": "float"
+    },
+    "Quantity_per_unit": "string",
+    "Avg_ratings": "float",
+    "Std_price": "float",
+    "Supp_price": "float",
+    "Category": "string",
+    "Fresh": {
+      "Category": "string",
+      "Best_before": "int",
+      "Country_of_origin": "string"
+    },
+    "Books": {
+      "Author_name": "string",
+      "Publisher": "string",
+      "Year_publication": "int",
+      "ISBN": "string"
+    },
+    "CDs": {
+      "Artist_name": "string",
+      "No_of_tracks": "int",
+      "Total_play_time": "int",
+      "Publisher": "string"
+    },
+    "Phones": {
+      "Brand": "string",
+      "Model": "string",
+      "Colour": "string",
+      "Features": ["string"]
+    },
+    "Home_appliances": {
+      "Colour": "string",
+      "Voltage": "int",
+      "Style": "string"
+    }
+  }
+  
+]
+
+
+ratings:[
+  {
+    "_id": "ObjectId",
+    "PublishDate": "string",
+    "Order_id": "ObjectId",
+    "Customer_id": "ObjectId",
+    "Order_date": "string",
+    "Product_id": "ObjectId",
+    "Rating": "float"
+  }
+  
+]
+
+suppliers:[
+  {
+    "_id": "ObjectId",
+    "Name": "string",
+    "Address": "string",
+    "City": "string",
+    "Post_code": "string",
+    "Location": {
+      "Coordinates": ["float", "float"]
+    },
+    "Realtime_inventory": [
+      {
+        "Product_id": "ObjectId",
+        "Timestamp": "string",
+        "Quantity": "int"
+      }
+    ]
+  }
+]  

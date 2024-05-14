@@ -1,0 +1,16 @@
+{
+  "_id": "ObjectId",
+  "Partner_id": "ObjectId",
+  "Start_date": "string",
+  "End_date": "string",
+  "Orders": [
+    {
+      "Order_id": "ObjectId",
+      "Timestamp": "string",
+      "Order_details": {
+        "Product_id": "ObjectId",
+        "Quantity": "int"
+      }
+    }
+  ]
+}

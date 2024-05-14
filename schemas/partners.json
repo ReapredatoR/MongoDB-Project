@@ -1,0 +1,25 @@
+{
+  "_id": "ObjectId",
+  "Name": "string",
+  "Age": "int",
+  "Gender": "string",
+  "Phone": "string",
+  "Email": "string",
+  "Bank_account": {
+    "Account_name": "string",
+    "Account_number": "string",
+    "Sort_code": "string"
+  },
+  "Availability": {
+    "Is_active": "int",
+    "On_delivery": "int",
+    "Location": {
+      "Type": "string",
+      "Coordinates": ["float", "float"]
+    }
+  },
+  "Deliveries_made": "int",
+  "Avg_per_week": "float",
+  "Best_week": "float",
+  "Number_of_week": "int"
+}

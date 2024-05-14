@@ -1,0 +1,16 @@
+{
+  "_id": "ObjectId",
+  "Supplier_id": "ObjectId",
+  "Product_id": "ObjectId",
+  "Start_date": "string",
+  "End_date": "string",
+  "Supplier_location": {
+    "Coordinates": ["float", "float"]
+  },
+  "Inventory_data": [
+    {
+      "Datetime": "string",
+      "Inventory_quantity": "int"
+    }
+  ]
+}

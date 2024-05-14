@@ -1,0 +1,43 @@
+{
+  "_id": "ObjectId",
+  "Product_name": "string",
+  "Short_desc": "string",
+  "Dimensions": {
+    "Length": "float",
+    "Width": "float",
+    "Height": "float"
+  },
+  "Quantity_per_unit": "string",
+  "Avg_ratings": "float",
+  "Std_price": "float",
+  "Supp_price": "float",
+  "Category": "string",
+  "Fresh": {
+    "Category": "string",
+    "Best_before": "int",
+    "Country_of_origin": "string"
+  },
+  "Books": {
+    "Author_name": "string",
+    "Publisher": "string",
+    "Year_publication": "int",
+    "ISBN": "string"
+  },
+  "CDs": {
+    "Artist_name": "string",
+    "No_of_tracks": "int",
+    "Total_play_time": "int",
+    "Publisher": "string"
+  },
+  "Phones": {
+    "Brand": "string",
+    "Model": "string",
+    "Colour": "string",
+    "Features": ["string"]
+  },
+  "Home_appliances": {
+    "Colour": "string",
+    "Voltage": "int",
+    "Style": "string"
+  }
+}

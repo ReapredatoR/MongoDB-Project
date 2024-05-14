@@ -1,0 +1,38 @@
+{
+  "_id": "ObjectId",
+  "Name": "string",
+  "Gender": "string",
+  "Age": "int",
+  "Phone_number": "string",
+  "Addresses": [
+    {
+      "_id": "ObjectId",
+      "House": "string",
+      "Street": "string",
+      "City": "string",
+      "Post_code": "string",
+      "Location": {
+        "Coordinates": ["float", "float"]
+      }
+    }
+  ],
+  "Current_orders": [
+    {
+      "_id": "ObjectId",
+      "Date": "string",
+      "Order_status": "string",
+      "Order_details": {
+        "Total_cost": "float",
+        "partner_id": "ObjectId",
+        "Shipping_id": "ObjectId",
+        "Supplier_id": "ObjectId"
+      },
+      "Recommended_products": [
+        {
+          "Product_id": "ObjectId",
+          "Avg_rating": "float"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "_id": "ObjectId",
+  "PublishDate": "string",
+  "Order_id": "ObjectId",
+  "Customer_id": "ObjectId",
+  "Order_date": "string",
+  "Product_id": "ObjectId",
+  "Rating": "float"
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "ObjectId",
+  "Order_date": "string",
+  "Customer_id": "ObjectId",
+  "Order_details": [
+    {
+      "Product_id": "ObjectId",
+      "Quantity": "int",
+      "Cost": "float"
+    }
+  ],
+  "Total_cost": "float",
+  "Partner_id": "ObjectId",
+  "Shipping_id": "ObjectId",
+  "Supplier_id": "ObjectId",
+  "Order_status": "string"
+}
